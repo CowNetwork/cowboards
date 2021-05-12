@@ -1,0 +1,5 @@
+name: Cowboards
+version: ${project.version}
+main: network.cow.mc.cowboards.CowboardsPlugin
+author: Tobias B.
+api-version: 1.16
