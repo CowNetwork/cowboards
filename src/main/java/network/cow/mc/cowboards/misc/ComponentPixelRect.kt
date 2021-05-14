@@ -1,4 +1,4 @@
-package network.cow.mc.cowboards
+package network.cow.mc.cowboards.misc
 
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.format.TextColor
