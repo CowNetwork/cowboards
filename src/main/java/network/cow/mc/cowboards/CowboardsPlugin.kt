@@ -77,8 +77,14 @@ class CowboardsPlugin : JavaPlugin(), Listener {
             return
         }
 
-        view!!.swapLines(1, 4)
-        view!!.swapLines("kills", "jumps")
+        if (event.message == "shift") {
+            view!!.shiftLine(2, 4)
+        } else if (event.message == "shiftBack") {
+            view!!.shiftLine(4, 2)
+        } else {
+            view!!.swapLines(1, 4)
+            view!!.swapLines("kills", "jumps")
+        }
     }
 
     @EventHandler
